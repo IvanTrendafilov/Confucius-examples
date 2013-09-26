@@ -1,12 +1,12 @@
 package org.trendafilov.confucius.examples.mailer;
 
-import org.trendafilov.confucius.Configurable;
-import org.trendafilov.confucius.Configuration;
-import org.trendafilov.confucius.core.ConfigurationException;
 import static java.lang.System.out;
 
+import org.trendafilov.confucius.Configurable;
+import org.trendafilov.confucius.Configuration;
+
 public class Mailer {
-	public static void main(String[] args) throws ConfigurationException {
+	public static void main(String[] args) {
 		Configurable config = Configuration.getInstance();
 		String context = config.getStringValue("conf.context", null);
 		if (context != null)
